@@ -19,7 +19,7 @@ class SISDatabase:
         self.connect()
         # Create tables if not exist
         self.cursor.execute('''
-            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Student')
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Students')
             BEGIN
                 CREATE TABLE Students (
                     student_id INT PRIMARY KEY,
@@ -33,7 +33,7 @@ class SISDatabase:
             ''')
 
         self.cursor.execute('''
-            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Course')
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Courses')
             BEGIN
                 CREATE TABLE Courses (
                     course_id INT PRIMARY KEY,
@@ -45,7 +45,7 @@ class SISDatabase:
             ''')
 
         self.cursor.execute('''
-            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Enrollment')
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Enrollments')
             BEGIN
                 CREATE TABLE Enrollments (
                    enrollment_id INT PRIMARY KEY,
@@ -69,7 +69,7 @@ class SISDatabase:
             ''')
 
         self.cursor.execute('''
-            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Payment')
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Payments')
             BEGIN
                 CREATE TABLE Payments (
                     payment_id INT PRIMARY KEY,
