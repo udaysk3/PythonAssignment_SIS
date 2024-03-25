@@ -7,3 +7,6 @@ Referense Screenshots
 ![image](https://github.com/udaysk3/PythonAssignment_SIS/assets/75845600/0279477c-d713-46e3-ad14-9c066265fa59)
 
 ![image](https://github.com/udaysk3/PythonAssignment_SIS/assets/75845600/017d85d6-1962-46a6-a1cb-3c8313e66ca4)
+
+![image](https://github.com/udaysk3/PythonAssignment_SIS/assets/75845600/4ae723d8-caa0-4287-a052-70042953af31)
+
